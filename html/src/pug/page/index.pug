@@ -1,0 +1,128 @@
+extends ../include/_template.pug
+include ../include/_mixin
+
+block content
+    +body("index", "index")
+        +banner
+        
+        section.services.text-center.pt-50.pb-30
+            .wraper
+                .flexBox.rows.center
+                    each item in [1,2,3,4,5]
+                        .item
+                            .images.m-auto
+                                img(src=`common/images/icon${item}.png`, alt="").imgAuto
+                            h4.title.fz-18.text-bold.mt-15 STRESS FREE
+                            .text.mt-10 Disconnect from your day to day life anddiscover a universe of peace, quiet andsublime tranquility
+        
+        section.service_hot.pt-50.pb-150
+            .bg
+                img(src="common/images/bg.png" alt="").imgAuto
+            .wraper
+                h2.title_main.fz-36.text-bold.text-center.fnt-amazon Dịch vụ nổi bật
+                .slider.mt-50
+                    each item in [1,2,3]
+                        div 
+                            .flexBox.space.midle
+                                .column
+                                    .imgDrop
+                                        img(src=`common/images/img0${item}.png`, alt="")
+                                .column.pr-15
+                                    h4.fz-16.text-up.fnt-utm.ttl_sub DISCOVER OUR ALL NATURAL HEALTH <br>SOLUTIONS FOR BODY AND SPIRIT
+                                    .mt-15 If you need any help or advice on therapies, please contact us and we will be happy to assist you.<br>Get incredible value with our service packs. All members are eligible for regular discounts
+
+        section.video.mt-100
+            .wraper
+                h2.title_main.fz-36.text-bold.text-center.fnt-amazon Video
+                .tab_video.mt-50.flexBox.space
+                    .tab_main
+                        //- each item in [1,2,3,4,5]
+                        .tab_content.current
+                            .video_production.imgDrop
+                                iframe(width='100%' src='https://www.youtube.com/embed/bZroxUgw0Qg?autoplay=1&playsinline=1&mute=1' frameborder='0' allowfullscreen='')
+                                .img_bg.bg_fix
+                                    img(src=`common/images/images_01.png` alt='')
+                                span.icon
+                            h4.ttl.text-up.fnt-medium.mt-10.fz-18 VISIT AND SHARE
+                            .info.flexBox.fz-12.mt-5
+                                .name.text-bold.mr-15 Drave Clark
+                                .date.color-gray March 21, 2020
+                            .text.mt-15 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuriesunchanged. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuriesunchanged.
+                                p it to make a type specimen book. It has survived not only five centuriesunchanged. when an unknown printer took a galley of type and scram
+                    .tab_nav
+                        each item in [1,2,3,4,5]
+                            a(href="#").nav_item.flexBox.midle
+                                .images
+                                    .imgDrop
+                                        img(src=`common/images/images_0${item}.png`, alt="")
+                                .content
+                                    h5.fnt-medium Lorem Ipsum is simply dummy text of the printing and typesetting 
+                                    .flexBox.midle.fz-12.mt-10
+                                        .btn_view.mr-10 View
+                                        .date.color-gray March 21, 2020
+        
+        section.images_before_after.pt-50.pb-30
+            .wraper
+                h2.title_main.fz-36.text-bold.text-center.fnt-amazon Hình ảnh trước và sau
+                .slider.mt-50
+                    each item in [1,2,3,4,5,6,7]
+                        .item
+                            .wrap.flexBox
+                                .images.shadow
+                                    .imgDrop
+                                        img(src=`common/images/before.png`, alt="")
+                                    .text-center.text-up.fz-12.text-bold.mt-5.pb-5 before
+                                .images.shadow
+                                    .imgDrop
+                                        img(src=`common/images/after.png`, alt="")
+                                    .text-center.text-up.fz-12.text-bold.mt-5.pb-5 after
+                                .title.mt-10.text-up.text-center nâng cầm
+        
+        +feedback
+        
+        section.sale_off.pb-50
+            .wraper
+                .content
+                    .content_main.text-center
+                        .icon
+                            img(src="common/images/banner_logo.png", alt="").imgAuto
+                        .mt-10.fz-30.text-up.color-blue Relaxation Spa
+                        .fz-12.color-blue.space-2 Lorem ipsum dolor sit amet
+                        h3.text-bold.fz-26.color-black.mt-10 Here's New way
+                        .text.mt-5.color-black.max-300.m-auto A collection of samples out on the table and above it that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed...
+                    .images
+                        img(src="common/images/banner_images.png", alt="")
+                        .number_sale.fz-36.color-black 50%
+
+        section.blog.pt-50
+            .wraper
+                h2.title_main.fz-36.text-bold.text-center.fnt-amazon Kiến thức về da
+                .blog_parent.flexBox.mt-50
+                     each item in [2,3,4,5,7]
+                        .column
+                            .item
+                                a(href="#").images
+                                    .imgDrop
+                                        img(src=`common/images/img0${item}.png`, alt="")
+                                .content.shadow
+                                    h4.title.text-bold.color-black.fz-18 
+                                        a(href="#") A collection of samples out on the table and above it 
+                                    .text.mt-10.color-black A collection of samples out on the table and above it that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed...
+                                    .mt-15
+                                        a.btn_view(href="#") Xem thêm
+        
+        section.ablum_images.pt-50
+            h3.title_main.fz-36.text-bold.text-center.fnt-amazon.mt-50 Kho ảnh
+            .album_parent.flexBox.mt-50
+                each item in [1,2,3,4,5,6,7,8,9,10]
+                    .column
+                        .imgDrop
+                            img(src=`common/images/images_0${item}.png`, alt="")
+
+        section.book_now.pb-50.pt-50
+            .wraper
+                 h2.title_main.fz-36.text-bold.text-center.fnt-amazon Book now
+                 +form_contact
+
+
+                                

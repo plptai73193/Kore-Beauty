@@ -1,0 +1,105 @@
+
+mixin mega(number)
+    - var number
+    .mega_menu.shadow.toggle_content
+        //- p= number
+        .tab_hover.flexBox
+            ul.tab_nav
+                li.current(data-tab=`#mega1${number}`) 
+                    a(href="#") Tab One #{number}
+                        i.fas.fa-chevron-right
+                li(data-tab=`#mega2${number}`)
+                    a(href="#") Tab Two #{number}
+                        i.fas.fa-chevron-right
+                li(data-tab=`#mega3${number}`)
+                    a(href="#") Tab Three #{number}
+                        i.fas.fa-chevron-right
+                li(data-tab=`#mega4${number}`)
+                    a(href="#") Tab Four #{number}
+                        i.fas.fa-chevron-right
+            .tab_main
+                .tab_content.current(id=`mega1${number}`)
+                    .flexBox
+                        each item in [1,2]
+                            .column
+                                h4.title.text-up.fnt-medium 
+                                    a(href="#") BEST OF SKIN CARE
+                                .images.mt-10
+                                    a(href="#").imgDrop
+                                        img(src=`common/images/images_0${item}.png`, alt="")
+                .tab_content(id=`mega2${number}`)
+                    .flexBox
+                        each item in [3,4]
+                            .column
+                                h4.title.text-up.fnt-medium 
+                                    a(href="#") BEST OF SKIN CARE
+                                .images.mt-10
+                                    a(href="#").imgDrop
+                                        img(src=`common/images/images_0${item}.png`, alt="")
+                .tab_content(id=`mega3${number}`)
+                    .flexBox
+                        each item in [5,6]
+                            .column
+                                h4.title.text-up.fnt-medium 
+                                    a(href="#") BEST OF SKIN CARE
+                                .images.mt-10
+                                    a(href="#").imgDrop
+                                        img(src=`common/images/images_0${item}.png`, alt="")
+                .tab_content(id=`mega4${number}`)
+                    .flexBox
+                        each item in [7,8]
+                            .column
+                                h4.title.text-up.fnt-medium 
+                                    a(href="#") BEST OF SKIN CARE
+                                .images.mt-10
+                                    a(href="#").imgDrop
+                                        img(src=`common/images/images_0${item}.png`, alt="")
+
+header
+    .wraper
+        .flexBox.center.midle
+            .address.fz-14 
+                i.fas.fa-map-marker-alt.mr-5
+                |212 Nguyễn Lương Bằng, Đống Đa, HN
+            h1.logo
+                a(href="./")
+                    img(src="common/images/logo.png" alt="").logo_main.imgAuto
+                    img.logo_fix(src="common/images/logo_fix.png" alt="").imgAuto
+            .header-right.flexBox.center.midle
+                form.form_search(action="").mr-10
+                    input(type="text")
+                    button
+                        i.fas.fa-search
+                ul.social.flexBox
+                    //- span.close x
+                    each item in ['fab fa-facebook-f','fab fa-google-plus-g','fab fa-linkedin-in','fab fa-twitter']
+                        li.ml-10.mr-10
+                            a(href="#")
+                                i(class=`${item}`)
+    nav.fz-14
+        .wraper
+            ul.flexBox.center.midle
+                //- each item, key in ['TRANG CHỦ','VỀ CHÚNG TÔI','DỊCH VỤ','CÁC VẤN ĐỀ VỀ DA','TIN TỨC','FEEDBACK','ĐĂNG KÝ TƯ VẤN']
+                li
+                    a(href="index.html") TRANG CHỦ
+                li
+                    a(href="about.html") VỀ CHÚNG TÔI
+                li.toggle_parents
+                    a(href="service.html") DỊCH VỤ
+                    span.toggle_btn
+                        i.fas.fa-sort-down
+                    +mega(key + 1)
+                li.toggle_parents
+                    a(href="blog.html") CÁC VẤN ĐỀ VỀ DA
+                    span.toggle_btn
+                        i.fas.fa-sort-down
+                    +mega(key + 1)
+                li
+                    a(href="news.html") TIN TỨC
+                li
+                    a(href="feedback.html") FEEDBACK
+                li
+                    a(href="contact.html") ĐĂNG KÝ TƯ VẤN
+
+    .nav_btn(onclick="document.body.classList.toggle('active')")
+        span

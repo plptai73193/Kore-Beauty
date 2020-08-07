@@ -1,0 +1,19 @@
+h1.mt-30.text-bold TOGGLE CLASS
+.toggle_class Toggle Class
+    style.
+        .toggle_class {
+            line-height: 40px;
+            border-radius: 5px;
+            background: #888;
+            color: #fff;
+            max-width: 200px;
+            text-align: center;
+            margin-top: 15px;
+        } 
+        .toggle_class.active {
+            background: #111;
+        }
+    script.
+        $(".toggle_class").click(function(){
+            $(this).toggleClass("active");
+        });

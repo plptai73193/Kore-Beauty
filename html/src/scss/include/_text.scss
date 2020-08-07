@@ -1,0 +1,391 @@
+/* --------------------------------------
+[font-size] 
+--------------------------------------*/
+
+.fz-160 {
+    font-size: 90px;
+    line-height: 100px;
+    @include min_767 {
+        font-size: 110px;
+        line-height: 120px;
+    }
+    @include min_991 {
+        font-size: 120px;
+        line-height: 130px;
+    }
+    @include min_1200 {
+        font-size: 140px;
+        line-height: 145;
+    }
+    @include min_1360 {
+        font-size: 160px;
+        line-height: 165px;
+    }
+}
+
+.fz-116 {
+    font-size: 70px;
+    line-height: 80px;
+    @include min_576 {
+        font-size: 95px;
+        line-height: 80px;
+    }
+    @include min_991 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+    @include min_1200 {
+        font-size: 110px;
+        line-height: 110px;
+    }
+    @include min_1360 {
+        font-size: 116px;
+        line-height: 116px;
+    }
+}
+
+.fz-84 {
+    font-size: 45px;
+    line-height: 50px;
+    @include min_767 {
+        font-size: 55px;
+        line-height: 50px;
+    }
+    @include min_991 {
+        font-size: 70px;
+        line-height: 60px;
+    }
+    @include min_1360 {
+        font-size: 84px;
+        line-height: 70px;
+    }
+}
+
+.fz-64 {
+    font-size: 35px;
+    line-height: 40px;
+    @include min_767 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    @include min_991 {
+        font-size: 55px;
+        line-height: 65px;
+    }
+    @include min_1360 {
+        font-size: 64px;
+        line-height: 70px;
+    }
+}
+
+.fz-54 {
+    font-size: 35px;
+    line-height: 40px;
+    @include min_767 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    @include min_991 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    @include min_1200 {
+        font-size: 50px;
+        line-height: 58px;
+    }
+    @include min_1360 {
+        font-size: 54px;
+        line-height: 62px;
+    }
+}
+
+.fz-52 {
+    font-size: 35px;
+    line-height: 40px;
+    @include min_767 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    @include min_991 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    @include min_1200 {
+        font-size: 50px;
+        line-height: 58px;
+    }
+    @include min_1360 {
+        font-size: 52px;
+        line-height: 62px;
+    }
+}
+
+.fz-48 {
+    font-size: 25px;
+    line-height: 30px;
+    @include min_767 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    @include min_991 {
+        font-size: 38px;
+        line-height: 55px;
+    }
+    @include min_1200 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+.fz-42 {
+    font-size: 28px;
+    line-height: 35px;
+    @include min_767 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    @include min_991 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    @include min_1200 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+    @include min_1360 {
+        font-size: 42px;
+        line-height: 48px;
+    }
+}
+
+.fz-40 {
+    font-size: 28px;
+    line-height: 35px;
+    @include min_767 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    @include min_991 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    @include min_1200 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+    @include min_1360 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+.fz-38 {
+    font-size: 22px;
+    line-height: 38px;
+    @include min_767 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    @include min_991 {
+        font-size: 34px;
+        line-height: 50px;
+    }
+    @include min_1200 {
+        font-size: 36px;
+        line-height: 55px;
+    }
+    @include min_1360 {
+        font-size: 38px;
+        line-height: 57px;
+    }
+}
+
+.fz-36 {
+    font-size: 25px;
+    line-height: 34px;
+    @include min_767 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    @include min_991 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    @include min_1200 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    @include min_1360 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+.fz-34 {
+    font-size: 25px;
+    line-height: 25px;
+    @include min_991 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    @include min_1200 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    @include min_1360 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+}
+
+.fz-32 {
+    font-size: 20px;
+    line-height: 25px;
+    @include min_991 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    @include min_1200 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    @include min_1360 {
+        font-size: 32px;
+        line-height: 35px;
+    }
+}
+
+.fz-30 {
+    font-size: 20px;
+    line-height: 25px;
+    @include min_991 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    @include min_1200 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    @include min_1360 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+.fz-28 {
+    font-size: 20px;
+    line-height: 25px;
+    @include min_991 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    @include min_1200 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    @include min_1360 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+}
+
+.fz-26 {
+    font-size: 18px;
+    line-height: 25px;
+    @include min_991 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    @include min_1200 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    @include min_1360 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+}
+
+.fz-24 {
+    font-size: 16px;
+    line-height: 24px;
+    @include min_991 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    @include min_1200 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    @include min_1360 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+.fz-20 {
+    font-size: 14px;
+    @include min_480 {
+        font-size: 16px;
+    }
+    @include min_991 {
+        font-size: 17px;
+    }
+    @include min_1360 {
+        font-size: 20px;
+    }
+}
+
+.fz-18 {
+    font-size: 16px;
+    line-height: 24px;
+    @include min_991 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+.fz-16 {
+    font-size: 15px;
+    line-height: 20px;
+    @include min_991 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.fz-14 {
+    font-size: 12px;
+    line-height: 20px;
+    @include min_991 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.fz-12 {
+    font-size: 10px;
+    line-height: 17px;
+    @include min_991 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+.color {
+    &-black {
+        color: #000;
+    }
+    &-blue {
+        color: #152338;
+    }
+}
+.space {
+    &-2 {
+        letter-spacing: 2px;
+    }
+}
+.max {
+    &-300 {
+        max-width: 400px;
+    }
+}

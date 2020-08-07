@@ -1,0 +1,50 @@
+extends ../include/_template.pug
+include ../include/_mixin
+
+block content
+    +body("service", "service")
+        +banner
+        
+        section.service_sub.pt-30.pb-80
+            .wraper
+                .parent.flexBox.space
+                    aside.mt-60
+                        h4.title_main.title_sub.fz-14 Dịch vụ nổi bật
+                        each item in [1,2,3,4,5]
+                            .item.flexBox.mt-25
+                                a(href="detail.html").images
+                                    .imgDrop
+                                        img(src=`common/images/img0${item}.png`, alt="")
+                                .content
+                                    h4.title.color-black
+                                        a(href="detail.html") A collection of samples out on the table and above it 
+                                    .mt-5
+                                        a.btn_view(href="#") Xem thêm
+                    .content_main
+                        h2.title_main.title_sub.fz-36.fnt-amazon Skin care
+                        .slider
+                            each slider in [1,2,3,4]
+                                div
+                                    each item in [1,2,3,4]
+                                        .item.flexBox.mt-25
+                                            a(href="detail.html").images
+                                                .imgDrop
+                                                    img(src=`common/images/img0${item}.png`, alt="")
+                                            .content
+                                                h4.title.color-black.text-bold.fz-14
+                                                    a(href="detail.html") A collection of samples out on the table and above it 
+                                                .text.color-black.mt-5 A collection of samples out on the table and above it that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed...
+                                                .mt-5
+                                                    a.btn_view(href="#") Xem thêm
+                    aside.mt-60
+                        h4.title_main.title_sub.fz-14 Dịch vụ nổi bật
+                        each item in [1,2,3,4,5]
+                            .item.flexBox.mt-25
+                                a(href="detail.html").images
+                                    .imgDrop
+                                        img(src=`common/images/img0${item}.png`, alt="")
+                                .content
+                                    h4.title.color-black
+                                        a(href="detail.html") A collection of samples out on the table and above it 
+                                    .mt-5
+                                        a.btn_view(href="#") Xem thêm

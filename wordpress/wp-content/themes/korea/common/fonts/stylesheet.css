@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Amazone';
+    src: url('Amazone.woff2') format('woff2'),
+        url('Amazone.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

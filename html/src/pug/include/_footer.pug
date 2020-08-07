@@ -1,0 +1,32 @@
+footer.pt-50.pb-30
+    .wraper
+        .flexBox
+            .column
+                h4.fz-18.text-up.title_line  hệ thống showroom
+            .column
+                ul.social.flexBox
+                    each item in ['fab fa-twitter','fab fa-youtube','fas fa-envelope','fab fa-facebook-f','fas fa-globe']
+                        li.mr-10
+                            a(href="#")
+                                i(class=`${item}`)
+        .flexBox.mt-10
+            each item in [1,2,3,4,5,6,7,8]
+                .column.toggle_parents
+                    .item.mt-20
+                        .text-bold.toggle_btn Hà Nội : 
+                        .toggle_content
+                            .mt-5
+                                i.fas.fa-map-marker-alt.mr-5
+                                | Số 168 Đường Láng - P Thịnh Quang - Q Đống Đa ( Thi công tại MIỀN BẮC)
+                            .tel
+                                a(href="#")
+                                    i.fas.fa-phone.mr-5
+                                    |  024 6671 8333 
+            .column
+                .item.mt-20
+                    .fb-page(data-href='https://www.facebook.com/facebook' data-tabs='timeline' data-width='500' data-height='120' data-small-header='false' data-adapt-container-width='true' data-hide-cover='false' data-show-facepile='true')
+                        blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/facebook')
+                            a(href='https://www.facebook.com/facebook') Facebook
+
+    .column
+    .column

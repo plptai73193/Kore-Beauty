@@ -1,0 +1,36 @@
+h1.mt-30.text-bold TOGGLE 
+            .toggle_parents.active
+                .toggle_btn  toggle button
+                .toggle_content content
+            .toggle_parents
+                .toggle_btn  toggle button
+                .toggle_content content
+            style.
+                .toggle_parents {
+                    margin-top: 15px;
+                }
+                .toggle_parents .toggle_btn {
+                    display:inline-block;
+                    padding: 10px 50px;
+                    background: #888;
+                    color: #fff;
+                    border-radius: 5px;
+                }
+                .toggle_parents .toggle_content {
+                    padding: 30px;
+                    background: #eee;
+                    margin-top: 15px;
+                }
+            script.
+                $('.toggle_parents').each(function(){
+                    if($(this).hasClass("active")) {
+                        $(this).find(".toggle_content").slideDown();
+                    } else {
+                        $(this).find(".toggle_content").slideUp();
+                    }
+                    $(this).find(".toggle_btn").click(function(){
+                        $(this).parents(".toggle_parents").toggleClass('active');
+                        $(this).parents(".toggle_parents").find(".toggle_content").slideToggle();
+                        $(this).parents(".toggle_parents").siblings().removeClass("active").find(".toggle_content").slideUp();
+                    });
+                });

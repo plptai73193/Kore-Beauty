@@ -1,0 +1,105 @@
+ul.list-page
+    li.dropdown-page 
+        a(href="index.html") Home
+    li.dropdown-page 
+        a(href="thuonghieu.html") Thuonghieu
+    li.dropdown-page 
+        a(href="thuonghieu_ct.html") Thuonghieu_ct
+    li.dropdown-page 
+        a(href="khuyenmai.html") Khuyenmai
+    li.dropdown-page 
+        a(href="khuyenmai_ct.html") Khuyenmai_ct
+    li.dropdown-page 
+        a(href="gongkinh.html") Gongkinh
+    li.dropdown-page 
+        a(href="gongkinh_ct.html") Gongkinh_ct
+    li.dropdown-page 
+        a(href="gioithieu.html") Gioithieu
+    li.dropdown-page 
+        a(href="faq.html") FAQ
+    li.dropdown-page 
+        a(href="dichvu_domattuvan.html") Dichvu_domattuvan
+    li.dropdown-page 
+        a(href="camnang_gongkinh.html") Camnang_gongkinh
+    li.dropdown-page 
+        a(href="camnang_gongkinh_ct.html") Camnang_gongkinh_ct
+    li.dropdown-page 
+        a(href="bosuutap.html") Bosuutap
+    li.dropdown-page 
+        a(href="trongkinh_theothuonghieu.html") Trongkinh_theothuonghieu
+    li.dropdown-page 
+        a(href="trongkinh_theonhucau.html") Trongkinh_theonhucau
+    li.dropdown-page 
+        a(href="hethongchinhanh.html") Hethongchinhanh
+    li.dropdown-page 
+        a(href="domat.html") Domat
+    li.dropdown-page 
+        a(href="gongkinh_chontrong.html") Gongkinh_chontrong
+
+    style.
+        .list-page {
+            border-radius: 8px 0 0 8px;
+            overflow: hidden;
+            border: 1px solid #222;
+            z-index: 9999;
+            width: 200px;
+            position: fixed;
+            top: 50%;
+            transform: translatey(-50%);
+            right: 0;
+                }
+        @media (max-width: 767px) {
+        .list-page {
+            display: none;
+        }
+        }
+        .list-page > li {
+            padding: 0 15px;
+            background: #000;
+        }
+        .list-page li {
+            font-size: 11px;
+            display: block;
+            border-bottom: 1px dashed #444;
+            transition: all 0.3s;
+            color: #ccc;
+        }
+        .list-page li:hover {
+            background: #333;
+        }
+        .list-page li a {
+            display: block;
+            color: inherit;
+        }
+        .list-page li:last-of-type {
+            border: none;
+        }
+        .list-page .dropdown-page {
+            position: relative;
+            cursor: pointer;
+        }
+        .list-page .dropdown-page:after {
+            position: absolute;
+            content: "+";
+            top: 0;
+            right: 15px;
+            color: #ccc;
+        }
+        .list-page .dropdown-page.active:after {
+            content: "-";
+        }
+        .list-page .sub-page {
+            background: #000;
+            margin: 0 -15px;
+            display: none;
+        }
+        .list-page .sub-page li {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .list-page .sub-page li:hover {
+            background: #444;
+        }
+        .list-page .sub-page li a {
+            padding: 0 15px;
+        }
+

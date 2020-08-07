@@ -1,0 +1,77 @@
+extends ../include/_template.pug
+include ../include/_mixin
+
+block content
+    +body("news", "blog")
+        +banner
+        
+        section.news_post.pt-50.pb-50
+            .wraper
+                h2.title_main.fz-36.text-bold.text-center.fnt-amazon Tin tức nổi Bật
+                .parent.mt-50.flexBox
+                    .column
+                        .imgDrop
+                            img(src="common/images/img03.png", alt="")
+                    .column
+                        .item_post.flexBox
+                            .content
+                                h4.title.text-bold.color-black.fz-18
+                                    a(href="#") A collection of samples out on the table and above it 
+                                .text.mt-10.color-black A collection of samples out on the table and above it that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed...
+                                .mt-15
+                                    a.btn_view(href="#") Xem thêm
+                            .images
+                                .imgDrop
+                                    img(src="common/images/img04.png", alt="")
+                        .item_post.flexBox.first_content
+                            .images
+                                .imgDrop
+                                    img(src="common/images/img08.png", alt="")
+                            .content
+                                h4.title.text-bold.color-black.fz-18
+                                    a(href="#") A collection of samples out on the table and above it 
+                                .text.mt-10.color-black A collection of samples out on the table and above it that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed...
+                                .mt-15
+                                    a.btn_view(href="#") Xem thêm
+                    .column
+                        .item_post.flexBox
+                            .images
+                                .imgDrop
+                                    img(src="common/images/images_07.png", alt="")
+                            .content
+                                h4.title.text-bold.color-black.fz-18
+                                    a(href="#") A collection of samples out on the table and above it 
+                                .text.mt-10.color-black A collection of samples out on the table and above it that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed...
+                                .mt-15
+                                    a.btn_view(href="#") Xem thêm
+                    .column
+                        .imgDrop
+                            img(src="common/images/img07.png", alt="")
+        section.news_blog.pt-50.pb-50
+            .wraper
+                h2.title_main.fz-36.text-bold.text-center.fnt-amazon Tin tức nổi bật
+                .blog_parent.flexBox.mt-50
+                     each item in [2,3,4]
+                        .column
+                            .item
+                                a(href="#").images
+                                    .imgDrop
+                                        img(src=`common/images/img0${item}.png`, alt="")
+                                .content.shadow
+                                    h4.title.text-bold.color-black.fz-18 
+                                        a(href="#") A collection of samples out on the table and above it 
+                                    .text.mt-10.color-black A collection of samples out on the table and above it that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed...
+                                    .mt-15
+                                        a.btn_view(href="#") Xem thêm
+        section.donate.pt-50.pb-50.text-center
+            .wraper
+                h2.title_main.fz-36.text-bold.text-center.fnt-amazon Ưu đãi
+                .slider.mt-50
+                    each item in [1,2,3]
+                        div 
+                            .flexBox
+                                .column
+                                    .imgDrop
+                                        img(src=`common/images/img0${item}.png`, alt="")
+                                .column.flexBox.center.midle
+                                    .content.fz-30.fnt-medium Friendsgiving & Giving<br>Back This Year

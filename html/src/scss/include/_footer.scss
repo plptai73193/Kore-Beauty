@@ -1,0 +1,101 @@
+/* --------------------------------------
+2. [footer] 
+--------------------------------------*/
+
+footer {
+    background: $main;
+    color: #ededed;
+    font-size: 13px;
+    line-height: 18px;
+    position: relative;
+    z-index: 999;
+    .column {
+        width: 100%;
+        @include min_767 {
+            width: calc(33.33% - 20px);
+            margin-left: 30px;
+        }
+        &:nth-child(3n + 1) {
+            margin-left: 0;
+        }
+    }
+    .item {
+        @include max_767 {
+            border-bottom: 1px solid #aaa;
+        }
+        .toggle_btn {
+            padding-bottom: 5px;
+            position: relative;
+            @include min_767 {
+                pointer-events: none;
+            }
+            &:after {
+                position: absolute;
+                content: "+";
+                font-weight: normal;
+                top: 1px;
+                right: 15px;
+                @include min_767 {
+                    display: none;
+                }
+            }
+        }
+    }
+    .active .toggle_btn:after {
+        content: "-";
+    }
+    .toggle_content {
+        @include max_767 {
+            padding-bottom: 15px;
+        }
+        @include min_767 {
+            display: block !important;
+        }
+    }
+    .social {
+        @include max_767 {
+            margin-top: 25px;
+            margin-bottom: 15px;
+            justify-content: center;
+        }
+        li {
+            width: 30px;
+            @include max_767 {
+                margin-left: 10px;
+            }
+            a {
+                display: block;
+                line-height: 28px;
+                border-radius: 50%;
+                font-size: 18px;
+                border: 1px solid #eee;
+                text-align: center;
+                transform: scale(1);
+                transition: all .5s;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    .title_line {
+        position: relative;
+        padding-bottom: 5px;
+        @include max_767 {
+            text-align: center;
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            background: #fff;
+            width: 100px;
+            @include max_767 {
+                right: 0;
+                margin: auto;
+            }
+        }
+    }
+}

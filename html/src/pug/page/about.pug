@@ -1,0 +1,40 @@
+extends ../include/_template.pug
+include ../include/_mixin
+
+block content
+    +body("index", "index")
+        +banner
+        section.about_main
+            .wraper
+                .bg
+                    img(src="common/images/bg2.png", alt="").imgAuto
+                .content.pt-50.pb-80
+                    each item in [1,2,3,4,5,6,7]
+                        .item.mt-30
+                            h4.title.fnt-medium.fz-20 What is lorem Ipsum
+                            .text.mt-10 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        section.about_video.pt-50.pb-50
+            .wraper
+                .slider.mt-50
+                    each item in [1,2,3]
+                        div 
+                            .flexBox.space.midle
+                                .column.pr-15
+                                    h4.fz-16.text-up.fnt-utm.ttl_sub DISCOVER OUR ALL NATURAL HEALTH <br>SOLUTIONS FOR BODY AND SPIRIT
+                                    .mt-15 If you need any help or advice on therapies, please contact us and we will be happy to assist you.<br>Get incredible value with our service packs. All members are eligible for regular discounts
+                                
+                                .column
+                                    .imgDrop
+                                        img(src=`common/images/img0${item}.png`, alt="")
+        section.feedback.pt-30.pb-50.text-center
+            .wraper
+                h2.title_main.fz-36.text-bold.text-center.fnt-amazon Chuyên gia hàng đầu
+                .text-center.mt-15.max-500 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                .slider.mt-50
+                    each item in [1,2,3,4,5]
+                        div
+                            .wrap
+                                .images
+                                    .imgDrop
+                                        img(src=`common/images/img0${item}.png`, alt="")
+                                .text.mt-15 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s

@@ -1,0 +1,34 @@
+.blog_post {
+    .column {
+        padding: 5px;
+        width: 50%;
+        @include min_767 {
+            width: 33.33%;
+        }
+        a {
+            display: block;
+        }
+        .imgDrop {
+            padding-top: 879/1340*100%;
+            img {
+                transform: scale(1);
+                transition: all .8s;
+            }
+        }
+        .content {
+            background: #ddd9d6;
+            transition: all .3s;
+        }
+        &:hover {
+            .imgDrop {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+            .content {
+                background: $main;
+                color: $nude;
+            }
+        }
+    }
+}

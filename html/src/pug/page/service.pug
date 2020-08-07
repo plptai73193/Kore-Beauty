@@ -1,0 +1,82 @@
+extends ../include/_template.pug
+include ../include/_mixin
+
+block content
+    +body("service", "service")
+        +banner
+        
+        section.service_main.pt-30.pb-80
+            .wraper
+                h2.title_main.fz-36.text-bold.text-center.fnt-amazon Dịch vụ
+                .text-center.mt-15.max-800 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuriesunchanged. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuriesunchanged.
+                .tab_parents.mt-50
+                    ul.tab_nav.flexBox.text-up.fz-12
+                        li.current(data-tab='#tab01') skin care
+                        li(data-tab='#tab02') trị liệu da công nghệ cao
+                        li(data-tab='#tab03') Trị liệu body
+                        li(data-tab='#tab04') Triệt lông
+                        li(data-tab='#tab05') Dịch vụ khác
+                    .tab_main.mt-30
+                        #tab01.tab_content.current
+                            .parents.flexBox.center
+                                each column in [1,2]
+                                    .column-2
+                                        each item in [1,2,3,4]
+                                            a(href="service_sub.html").item.flexBox.space.color-black.midle.mt-15
+                                                .images
+                                                    .imgDrop
+                                                        img(src=`common/images/img0${item}.png`, alt="")
+                                                .content.flexBox.space.midle
+                                                    .name.fnt-medium.text-up SIGNATURE TREATMENTS
+                                                    .price 200.000/buổi
+                        #tab02.tab_content
+                            .parents.flexBox.center
+                                each column in [1,2,3,4]
+                                    .column-4
+                                        h4.title.text-up.fz-16.mb-30.color-black massage
+                                        each item in [1,2,3,4]
+                                            a(href="service_sub.html").item.flexBox.space.color-black.midle.mt-15
+                                                .images
+                                                    .imgDrop
+                                                        img(src=`common/images/img0${item}.png`, alt="")
+                                                .content.flexBox.space.midle
+                                                    .name.fnt-medium.text-up SIGNATURE TREATMENTS
+                                                    .price 200.000/buổi
+                        #tab03.tab_content
+                            .parents.flexBox.center
+                                each column in [1,2,3,4]
+                                    .column-4
+                                        h4.title.text-up.fz-16.mb-30.color-black Trị liệu
+                                        each item in [1,2,3,4]
+                                            a(href="service_sub.html").item.flexBox.space.color-black.midle.mt-15
+                                                .images
+                                                    .imgDrop
+                                                        img(src=`common/images/img0${item}.png`, alt="")
+                                                .content.flexBox.space.midle
+                                                    .name.fnt-medium.text-up SIGNATURE TREATMENTS
+                                                    .price 200.000/buổi
+                        #tab04.tab_content
+                            .parents.flexBox.center
+                                each column in [1,2]
+                                    .column-2
+                                        h4.title.text-up.fz-16.mb-30.color-black triệt lông buổi lẻ
+                                        each item in [1,2,3,4,5,6,1,2]
+                                            a(href="service_sub.html").item.flexBox.space.color-black.midle.mt-15
+                                                .images
+                                                    .imgDrop
+                                                        img(src=`common/images/img0${item}.png`, alt="")
+                                                .content.flexBox.space.midle
+                                                    .name.fnt-medium.text-up SIGNATURE TREATMENTS
+                                                    .price 200.000/buổi
+                        #tab05.tab_content
+                            .parents.flexBox.center
+                                .column-2
+                                    //- h4.title.text-up.fz-16.mb-30.color-black triệt lông buổi lẻ
+                                    each item in [1,2,3,4,]
+                                        a(href="service_sub.html").item.flexBox.space.color-black.midle.mt-15
+                                            .images
+                                                .imgDrop
+                                                    img(src=`common/images/img0${item}.png`, alt="")
+                                            .content.flexBox.space.midle
+                                                .name.fnt-medium.text-up SIGNATURE TREATMENTS
+                                                .price 200.000/buổi

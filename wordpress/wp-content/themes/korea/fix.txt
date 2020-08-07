@@ -1,0 +1,8 @@
+chỗ nào thấy khoai thì hỏi ô sumi nha a【該当UR】
+http://fcv.f-webdesign.biz/FCJP/fc_graduation/
+
+
+【nội dung fix 】　
+
+13.cách hiển thị của bài viết khi hiển thị responsive của page các categgory
+thì hãy làm hiển thị slide giống với index

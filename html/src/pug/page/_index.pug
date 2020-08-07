@@ -1,0 +1,10 @@
+extends ../include/_template.pug
+include ../include/_mixin
+
+block content
+    +body("index", "index")
+        .wraper
+            include ../component/_tab
+            include ../component/_toggle_class
+            include ../component/_toggle
+            include ../component/_video

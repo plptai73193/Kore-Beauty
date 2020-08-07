@@ -1,0 +1,45 @@
+h1.mt-30.text-bold TAB CHANGE
+.tab_parents
+    ul.tab_nav.flexBox
+        li.current(data-tab='#tab1') Tab One
+        li(data-tab='#tab2') Tab Two
+        li(data-tab='#tab3') Tab Three
+        li(data-tab='#tab4') Tab Four
+    .tab_main
+        #tab1.tab_content.current
+            | Lorem ipsum dolor sit amet, consectetur
+        #tab2.tab_content
+            | Duis aute irure dolor in reprehenderit<br> in voluptate velit esse cillum <br>dolore eu fugiat nulla pariatur. 
+        #tab3.tab_content
+            | Ut enim ad minim veniam,<br> quis nostrud exercitation ullamc
+        #tab4.tab_content
+            | Sed do eiusmod tempor 
+
+    //- css
+    style.
+        .tab_parents {
+            margin: 15px 0;
+        }
+        .tab_parents .tab_nav li {
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .tab_parents .tab_content {
+            margin-top: 15px;
+            padding: 30px;
+            background: #eee
+        }
+    //- js
+    script.
+        $(".tab_parents").each(function(){
+            $('.tab_nav li').click(function(){
+                $('.tab_content').hide();
+                $('.tab_parents li.current').removeClass('current');
+                $(this).addClass('current');
+                var panel = $(this).attr('data-tab');
+                $(panel).fadeIn(500);
+                return false; 
+            });  
+            $('.tab_nav li:first').click();
+        });

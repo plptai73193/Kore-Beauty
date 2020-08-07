@@ -1,0 +1,45 @@
+extends ../include/_template.pug
+include ../include/_mixin
+
+block content
+    +body("detail", "detail")
+        +banner
+
+        section.detail.pt-50.pb-80
+            .wraper
+                .parent.flexBox.space.top
+                    .detail_main
+                        h2.fz-26 WordPress News Magazine Charts the Most Chic and Fashionable Women of New York City
+                        .content
+                            p
+                                img(src="common/images/images_05.png" alt="").imgAuto
+                            h3.fz-24 WordPress News Magazine Charts
+                            p From fixed price contracting to construction management and everything in between, our construction business has given rise to some of our most recognised and celebrated projects and some of our most notorious challenges and inspiring solutions.
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            p From fixed price contracting to construction management and everything in between, our construction business has given rise to some of our most recognised and celebrated projects and some of our most notorious challenges and inspiring solutions.
+                            p From fixed price contracting to construction management and everything in between, our construction business has given rise to some of our most recognised and celebrated projects and some of our most notorious challenges and inspiring solutions.
+                            p Why do we use it?
+                            p It is a long established fact that a reader will be distracted by the readable content of a page when look
+                        ul.hastag.flexBox.mt-30
+                            li
+                                a(href="#") #skincare
+                            li
+                                a(href="") #skincare
+                            li
+                                a(href="") #skincare
+                            li
+                                a(href="") #skincare
+                    aside.aside_detail
+                        .banner_sale
+                            img(src="common/images/banner_sale.png", alt="").imgAuto
+                        h4.title_main.title_sub.fz-18.mt-30 Các gói dịch vụ khác
+                        each item in [1,2,3,4,5]
+                            .item.flexBox.mt-25
+                                a(href="detail.html").images
+                                    .imgDrop
+                                        img(src=`common/images/img0${item}.png`, alt="")
+                                .content
+                                    h4.title.color-black
+                                        a(href="detail.html") A collection of samples out on the table and above it 
+                                    .mt-5
+                                        a.btn_view(href="#") Xem thêm

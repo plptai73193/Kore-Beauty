@@ -1,0 +1,61 @@
+mixin body(pagename, nav1_active, nav2_active)
+    - var classbody = pagename
+    - var nav1_active = nav1_active
+    - var nav2_active = nav2_active
+    body(class= classbody) 
+        include _header
+        main 
+            if block
+                block
+            else
+                p No content provided
+        include _footer
+        //- include _page_nav
+mixin banner
+    section.banner.text-center.flexBox.center.midle
+        .img-left
+            img(src="common/images/banner_01.png" alt="").imgDrop
+
+        .img-right
+            img(src="common/images/banner_02.png" alt="").imgDrop
+        .content
+            h2.fz-54.text-up.fnt-utm.ttl_line RELAXING IS NEVER EASY<br>ON YOUR OWN
+            .text.mt-20 From fixed price contracting to construction management and everything in between, our construction business has given rise to some of our most recognised and celebrated projects and some of
+            .flexBox.center.mt-15.button
+                a(href="#").btn_line view service
+                a(href="#").btn_fill BOOK NOW
+
+mixin feedback
+    section.feedback.pt-30.pb-50.text-center
+        .wraper
+            h2.title_main.fz-36.text-bold.text-center.fnt-amazon Feedback
+            .text-center.mt-15.max-500 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            .slider.mt-50
+                each item in [1,2,3,4,5]
+                    div
+                        .wrap
+                            .images
+                                .imgDrop
+                                    img(src=`common/images/img0${item}.png`, alt="")
+                            .text.mt-15 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                            .info
+                                .name.text-bold.text-up.color-black.mt-15.fz-16 Nguyên văn a
+                                .fz-12.color-gray Hà Nội, Doanh nghiệp ...
+
+mixin form_contact
+    .flexBox.mt-50
+        .column
+            .imgDrop
+                img(src="common/images/img08.png", alt="")
+        .column
+            form.form_book(action="#").pt-50.pb-50
+                .group.pt-10.pb-10.flexBox
+                    input(type="text", placeholder="Họ tên").w_auto_200
+                    input(type="text",  placeholder="SĐT").w_200
+                .group.pt-10.pb-10.flexBox
+                    input(type="email"  placeholder="Email")
+                .group.pt-10.pb-10.flexBox
+                    textarea(placeholder="Nhập văn bản")
+                .group.pt-10.pb-10
+                    button.btn_view.text-up Gửi đi
+

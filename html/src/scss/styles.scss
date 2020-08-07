@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import "include/mixin";
+@import "include/var";
+
+/* TABLE OF CONTENT
+    1. [header]
+    2. [footer]
+    3. [page home] 
+*/
+
+@import 'include/header';
+@import 'include/footer';
+@import 'page/index';
+@import 'page/about';
+@import 'page/blog';
+@import 'page/news';
+@import 'page/service';

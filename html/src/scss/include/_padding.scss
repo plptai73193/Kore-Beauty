@@ -1,0 +1,344 @@
+/* --------------------------------------
+[padding top] 
+--------------------------------------*/
+
+.pt-150 {
+    padding-top: 60px;
+    @include min_767 {
+        padding-top: 100px;
+    }
+    @include min_991 {
+        padding-top: 130px;
+    }
+    @include min_1200 {
+        padding-top: 150px;
+    }
+}
+
+.pt-120 {
+    padding-top: 50px;
+    @include min_767 {
+        padding-top: 80px;
+    }
+    @include min_991 {
+        padding-top: 100px;
+    }
+    @include min_1200 {
+        padding-top: 120px;
+    }
+}
+
+.pt-100 {
+    padding-top: 45px;
+    @include min_767 {
+        padding-top: 60px;
+    }
+    @include min_991 {
+        padding-top: 80px;
+    }
+    @include min_1200 {
+        padding-top: 100px;
+    }
+}
+
+.pt-90 {
+    padding-top: 35px;
+    @include min_767 {
+        padding-top: 50px;
+    }
+    @include min_991 {
+        padding-top: 65px;
+    }
+    @include min_1200 {
+        padding-top: 90px;
+    }
+}
+
+.pt-80 {
+    padding-top: 35px;
+    @include min_767 {
+        padding-top: 50px;
+    }
+    @include min_991 {
+        padding-top: 65px;
+    }
+    @include min_1200 {
+        padding-top: 80px;
+    }
+}
+
+.pt-60 {
+    padding-top: 30px;
+    @include min_767 {
+        padding-top: 40px;
+    }
+    @include min_991 {
+        padding-top: 50px;
+    }
+    @include min_1200 {
+        padding-top: 60px;
+    }
+}
+
+.pt-50 {
+    padding-top: 25px;
+    @include min_767 {
+        padding-top: 35px;
+    }
+    @include min_991 {
+        padding-top: 40px;
+    }
+    @include min_1200 {
+        padding-top: 50px;
+    }
+}
+
+.pt-45 {
+    padding-top: 25px;
+    @include min_767 {
+        padding-top: 35px;
+    }
+    @include min_991 {
+        padding-top: 40px;
+    }
+    @include min_1200 {
+        padding-top: 45px;
+    }
+}
+
+.pt-40 {
+    padding-top: 15px;
+    @include min_767 {
+        padding-top: 25px;
+    }
+    @include min_991 {
+        padding-top: 40px;
+    }
+}
+
+.pt-35 {
+    padding-top: 15px;
+    @include min_767 {
+        padding-top: 25px;
+    }
+    @include min_991 {
+        padding-top: 35px;
+    }
+}
+
+.pt-30 {
+    padding-top: 15px;
+    @include min_767 {
+        padding-top: 20px;
+    }
+    @include min_991 {
+        padding-top: 30px;
+    }
+}
+
+.pt-25 {
+    padding-top: 10px;
+    @include min_767 {
+        padding-top: 15px;
+    }
+    @include min_991 {
+        padding-top: 25px;
+    }
+}
+
+.pt-20 {
+    padding-top: 10px;
+    @include min_767 {
+        padding-top: 15px;
+    }
+    @include min_991 {
+        padding-top: 20px;
+    }
+}
+
+.pt-15 {
+    padding-top: 10px;
+    @include min_991 {
+        padding-top: 15px;
+    }
+}
+
+.pt-10 {
+    padding-top: 5px;
+    @include min_991 {
+        padding-top: 10px;
+    }
+}
+
+
+/* --------------------------------------
+[padding bottom] 
+--------------------------------------*/
+
+.pb-150 {
+    padding-bottom: 60px;
+    @include min_767 {
+        padding-bottom: 100px;
+    }
+    @include min_991 {
+        padding-bottom: 130px;
+    }
+    @include min_1200 {
+        padding-bottom: 150px;
+    }
+}
+
+.pb-120 {
+    padding-bottom: 50px;
+    @include min_767 {
+        padding-bottom: 80px;
+    }
+    @include min_991 {
+        padding-bottom: 100px;
+    }
+    @include min_1200 {
+        padding-bottom: 120px;
+    }
+}
+
+.pb-100 {
+    padding-bottom: 45px;
+    @include min_767 {
+        padding-bottom: 60px;
+    }
+    @include min_991 {
+        padding-bottom: 80px;
+    }
+    @include min_1200 {
+        padding-bottom: 100px;
+    }
+}
+
+.pb-90 {
+    padding-bottom: 35px;
+    @include min_767 {
+        padding-bottom: 50px;
+    }
+    @include min_991 {
+        padding-bottom: 65px;
+    }
+    @include min_1200 {
+        padding-bottom: 90px;
+    }
+}
+
+.pb-80 {
+    padding-bottom: 35px;
+    @include min_767 {
+        padding-bottom: 50px;
+    }
+    @include min_991 {
+        padding-bottom: 65px;
+    }
+    @include min_1200 {
+        padding-bottom: 80px;
+    }
+}
+
+.pb-60 {
+    padding-bottom: 30px;
+    @include min_767 {
+        padding-bottom: 40px;
+    }
+    @include min_991 {
+        padding-bottom: 50px;
+    }
+    @include min_1200 {
+        padding-bottom: 60px;
+    }
+}
+
+.pb-50 {
+    padding-bottom: 25px;
+    @include min_767 {
+        padding-bottom: 35px;
+    }
+    @include min_991 {
+        padding-bottom: 40px;
+    }
+    @include min_1200 {
+        padding-bottom: 50px;
+    }
+}
+
+.pb-45 {
+    padding-bottom: 25px;
+    @include min_767 {
+        padding-bottom: 35px;
+    }
+    @include min_991 {
+        padding-bottom: 40px;
+    }
+    @include min_1200 {
+        padding-bottom: 45px;
+    }
+}
+
+.pb-40 {
+    padding-bottom: 15px;
+    @include min_767 {
+        padding-bottom: 25px;
+    }
+    @include min_991 {
+        padding-bottom: 40px;
+    }
+}
+
+.pb-35 {
+    padding-bottom: 15px;
+    @include min_767 {
+        padding-bottom: 25px;
+    }
+    @include min_991 {
+        padding-bottom: 35px;
+    }
+}
+
+.pb-30 {
+    padding-bottom: 15px;
+    @include min_767 {
+        padding-bottom: 20px;
+    }
+    @include min_991 {
+        padding-bottom: 30px;
+    }
+}
+
+.pb-25 {
+    padding-bottom: 10px;
+    @include min_767 {
+        padding-bottom: 15px;
+    }
+    @include min_991 {
+        padding-bottom: 25px;
+    }
+}
+
+.pb-20 {
+    padding-bottom: 10px;
+    @include min_767 {
+        padding-bottom: 15px;
+    }
+    @include min_991 {
+        padding-bottom: 20px;
+    }
+}
+
+.pb-15 {
+    padding-bottom: 10px;
+    @include min_991 {
+        padding-bottom: 15px;
+    }
+}
+
+.pb-10 {
+    padding-bottom: 5px;
+    @include min_991 {
+        padding-bottom: 10px;
+    }
+}

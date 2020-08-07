@@ -1,0 +1,21 @@
+extends ../include/_template.pug
+include ../include/_mixin
+
+block content
+    +body("post", "blog")
+        +banner
+        
+        section.blog_post.pt-30.pb-50.text-center
+            .wraper
+                h2.title_main.fz-36.text-bold.text-center.fnt-amazon Các vấn đề về da
+                .text-center.mt-15.max-800 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuriesunchanged. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuriesunchanged.
+                .parent.mt-50.flexBox
+                    each item in [1,2,3,4,5,6]
+                        .column
+                            a(href="#")
+                                .images
+                                    .imgDrop
+                                        img(src=`common/images/img0${item}.png`, alt="")
+                                .content.text-center.pb-10
+                                    .number.fz-54.fnt-utm= item
+                                    .text-up.fnt-light.mt-5 Face Massage

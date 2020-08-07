@@ -1,0 +1,21 @@
+.fcv-dashboard {
+  margin-top: 30px;
+  max-width: 95%;
+}
+
+.pre-code {
+	background: #f3f3f7;
+	border: 1px solid #DEDEE2;
+	padding: 10px;
+	display: inline-block;
+	width: 100%;
+}
+
+.btn-clip {
+
+}
+
+.dialog *+.dialog-content {
+	max-height: 100%;
+	overflow: auto;
+}

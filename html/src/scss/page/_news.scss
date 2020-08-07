@@ -1,0 +1,136 @@
+.news {
+    background: #eaeaea;
+}
+
+.news_post {
+    .column {
+        width: 100%;
+        @include min_991 {
+            width: 50%;
+        }
+        .imgDrop {
+            padding-top: 100%;
+            height: 100%;
+            @include max_576 {
+                padding-top: 65%;
+            }
+        }
+        .item_post {
+            margin: 2px 0;
+            background: #fff;
+            @include max_576 {
+                margin: 0 0 10px;
+            }
+            .images {
+                width: 100%;
+                @include min_576 {
+                    width: 250px;
+                }
+                @include max_991 {
+                    order: -1;
+                }
+                @include min_991 {
+                    width: 50%;
+                }
+            }
+            .content {
+                width: 100%;
+                padding: 15px;
+                @include min_576 {
+                    width: calc(100% - 250px);
+                    padding: 20px;
+                }
+                @include min_991 {
+                    width: 50%;
+                }
+            }
+        }
+        &:nth-child(1) {
+            @include max_576 {
+                display: none;
+            }
+            .imgDrop {
+                @include max_991 {
+                    padding-top: 50%;
+                }
+            }
+        }
+        &:nth-child(4) {
+            @include max_576 {
+                display: none;
+            }
+            .imgDrop {
+                height: 100%;
+                padding-top: 0;
+                @include max_991 {
+                    padding-top: 50%;
+                }
+            }
+        }
+    }
+}
+
+.news_blog {
+    .column {
+        padding: 5px;
+        width: 100%;
+        @include min_576 {
+            width: 50%;
+        }
+        @include min_767 {
+            width: 33.33%;
+        }
+        @include min_991 {
+            padding: 10px;
+        }
+    }
+    .item {
+        background: #fff;
+        height: 100%;
+        .images {
+            display: block;
+        }
+        .imgDrop {
+            padding-top: 970/1690 * 100%;
+            img {
+                transform: scale(1);
+                transition: all 0.5s;
+            }
+        }
+        .content {
+            background: #fff;
+            padding: 15px;
+            @include min_991 {
+                padding: 15px 30px;
+            }
+        }
+        &:hover {
+            .imgDrop {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+            .content {
+                .title {
+                    color: $main;
+                }
+            }
+        }
+    }
+}
+
+.donate {
+    .column {
+        background: #fff;
+        width: 100%;
+        @include min_767 {
+            width: 50%;
+        }
+    }
+    .imgDrop {
+        padding-top: 100%;
+    }
+    .content {
+        padding: 15px;
+    }
+}

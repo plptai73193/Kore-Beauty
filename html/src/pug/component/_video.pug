@@ -1,0 +1,20 @@
+
+h1.text-bold.mt-30.text-up video
+.video_production.imgDrop
+    iframe(width='100%' src='https://www.youtube.com/embed/bZroxUgw0Qg?autoplay=1&playsinline=1&mute=1' frameborder='0' allowfullscreen='')
+    .img_bg.bg_fix
+        img(src='common/images/banner.jpg' alt='')
+    span.icon
+script.
+    /* -------------------------------
+    video
+    --------------------------------- */
+    $('.video_production').each(function() {
+        var src = $(this).find('iframe').attr('src');
+        $(this).find('iframe').attr('data-src', src).attr('src', ' ');
+        $(this).click(function() {
+            $(this).addClass('show');
+            $(this).find('iframe').show().attr('src', src);
+            $(this).find('.img_bg').fadeOut(1500);
+        });
+    })
